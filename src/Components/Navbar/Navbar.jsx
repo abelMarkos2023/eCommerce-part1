@@ -19,10 +19,10 @@ const Navbar = () => {
         <div className={`header-top d-md-none ${socialToggle ?'open':''}`}>
             <div className="header-top-area">
             <div className="container">
-            <Link to='/signup' className='lab-btn me-3'>
+            <Link to='/' className='lab-btn me-3'>
                 <span>Create an Account</span>
             </Link>
-                <Link to='/login'>Login</Link>
+                <Link to='/'>Login</Link>
             </div>
             </div>
         </div>
@@ -51,8 +51,8 @@ const Navbar = () => {
                            
                         </div>
                         {/* Signup & Login */}
-                        <Link className="lab-btn me-3 d-none d-md-block" to='/sign-up'>Create Account</Link>
-                            <Link to='/login' className='d-none d-md-block'>Login</Link>
+                        <Link className="lab-btn me-3 d-none d-md-block" to='/'>Create Account</Link>
+                            <Link to='/' className='d-none d-md-block'>Login</Link>
 
                             {/* Menu Toggler */}
                             <div onClick = {() => setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? 'active' :''}`}>

@@ -14,13 +14,13 @@ const ProductCard = ({gridView,products}) => {
                             <img src={product.img} alt="" />
                         </div>
                         <div className="product-action-link">
-                            <Link to={`/products/${product.id}`}>
+                            <Link to={`/shop/${product.id}`}>
                                 <i className="icofont-eye"></i>
                             </Link>
                             <a href="#">
                                 <i className="icofont-heart"></i>
                             </a>
-                            <Link to="/cart">
+                            <Link to="/shop/cart">
                                 <i className="icofont-cart-alt"></i>
                             </Link>
                         </div>

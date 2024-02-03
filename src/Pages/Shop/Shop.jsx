@@ -8,6 +8,8 @@ import ProductCard from '../../Components/ProductCard/ProductCard';
 import Pagination from '../../Components/Pagination/Pagination';
 import Search from '../../Components/Search/Search';
 import ShopCategories from '../../Components/ShopCategories/ShopCategories';
+import PopularPosts from './PopularPosts';
+import PopularTags from './PopularTags';
 const Shop = () => {
     const [gridView,setGridView] = useState(true);
     const [products,setProducts] = useState(Data);
@@ -71,6 +73,8 @@ return (
         <aside>
             <Search gridView = {gridView} products={products} />
             <ShopCategories term={category} filterCategories={filterCategories}  categories={categories}/>
+            <PopularPosts />
+            <PopularTags/>
         </aside>
     </div>
 
